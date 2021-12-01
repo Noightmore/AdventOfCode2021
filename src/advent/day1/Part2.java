@@ -6,6 +6,10 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class Part2 {
+    /*
+        Advent of code day 1 - part 2
+        https://adventofcode.com/2021/day/1
+     */
     public static long measurementOfTheDepth(){
 
         URL url = Part2.class.getResource("input2.txt");
@@ -37,6 +41,6 @@ public class Part2 {
             e.printStackTrace();
         }
 
-        return  countOfDepthIncreases;
+        return countOfDepthIncreases;
     }
 }

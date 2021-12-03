@@ -14,7 +14,7 @@ public class Part1 {
      */
     public static long getFinalPosition() {
 
-        URL url = Part1.class.getResource("input1.txt");
+        URL url = Part1.class.getResource("input.txt");
         String[] formattedLine;
         long horizontalPos = 0;
         long depth = 0;

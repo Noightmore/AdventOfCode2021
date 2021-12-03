@@ -13,7 +13,7 @@ public class Part1 {
       https://adventofcode.com/2021/day/3
    */
     public static int getDiagnosis() throws FileNotFoundException {
-        URL url = advent.day3.Part1.class.getResource("input1.txt");
+        URL url = advent.day3.Part1.class.getResource("input.txt");
         assert url != null;
         File myObj = new File(url.getPath());
         Scanner myReader = new Scanner(myObj);

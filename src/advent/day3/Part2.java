@@ -11,7 +11,7 @@ public class Part2 {
     */
     public static int getDiagnosis(){
 
-        InputStream input = advent.day3.Part2.class.getResourceAsStream("input2.txt");
+        InputStream input = advent.day3.Part2.class.getResourceAsStream("input.txt");
         List<String> signalPulses = new ArrayList<>();
         assert input != null;
         try (Scanner scanner = new Scanner(input)) {

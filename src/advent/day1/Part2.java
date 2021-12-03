@@ -12,7 +12,7 @@ public class Part2 {
      */
     public static long measurementOfTheDepth(){
 
-        URL url = Part2.class.getResource("input2.txt.txt");
+        URL url = Part2.class.getResource("input.txt");
         long theMostLastLine = Long.MIN_VALUE, lastLine = Long.MIN_VALUE, currentLine;
         long previousSum = 0;
         long countOfDepthIncreases = -1;

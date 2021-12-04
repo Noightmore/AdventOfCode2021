@@ -17,10 +17,10 @@ public class Part1 {
         File myObj = new File(url.getPath());
         Scanner myReader = new Scanner(myObj);
         boolean isInitialLine = true;
-        List<Integer> rowOfGuesses = new ArrayList<Integer>();
+        List<Integer> rowOfGuesses = new ArrayList<>();
         int[][] bingoTable = new int[5][5];
         int tablesLineIndex = 0;
-        int indexIncreaser = 0;
+        int indexIncrease = 0;
         int result = 0;
         int numberOfTries = Integer.MAX_VALUE;
         int numberOfLocalTries = 0;
@@ -43,11 +43,11 @@ public class Part1 {
                 String[] lineSplit = line.split(" ");
                 if(tablesLineIndex < 5){
                     for(int i=0;i<5;i++){
-                        if(lineSplit[i+indexIncreaser].equals("")){
-                            bingoTable[tablesLineIndex][i] = Integer.parseInt(lineSplit[i+indexIncreaser+1]);
-                            indexIncreaser++;
+                        if(lineSplit[i+indexIncrease].equals("")){
+                            bingoTable[tablesLineIndex][i] = Integer.parseInt(lineSplit[i+indexIncrease+1]);
+                            indexIncrease++;
                         }else{
-                            bingoTable[tablesLineIndex][i] = Integer.parseInt(lineSplit[i+indexIncreaser]);
+                            bingoTable[tablesLineIndex][i] = Integer.parseInt(lineSplit[i+indexIncrease]);
                         }
                     }
 
@@ -74,10 +74,10 @@ public class Part1 {
                             numberOfLocalTries++;
                         }
 
-                        indexIncreaser = tablesLineIndex = 0;
+                        indexIncrease = tablesLineIndex = 0;
                         continue;
                     }
-                    indexIncreaser = numberOfLocalTries = 0;
+                    indexIncrease = numberOfLocalTries = 0;
                     tablesLineIndex++;
                 }
             }

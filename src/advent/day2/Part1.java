@@ -1,7 +1,5 @@
 package advent.day2;
 
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;

@@ -3,7 +3,6 @@ package advent.day3;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 

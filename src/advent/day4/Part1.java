@@ -52,20 +52,22 @@ public class Part1 {
                     }
 
                     if(tablesLineIndex == 4){
-                        for (int calledNumberIndex=0; calledNumberIndex < rowOfGuesses.size(); calledNumberIndex++) {
+                        for (Integer rowOfGuess : rowOfGuesses) {
+
                             // guessing part
-                            for(int i=0;i<5;i++){
-                                for(int j=0;j<5;j++){
-                                    if(rowOfGuesses.get(calledNumberIndex) == bingoTable[i][j]){
+                            for (int i = 0; i < 5; i++) {
+                                for (int j = 0; j < 5; j++) {
+                                    if (rowOfGuess == bingoTable[i][j]) {
                                         bingoTable[i][j] = 0;
                                     }
                                 }
                             }
-                            if(iWon(bingoTable)){
-                                if(numberOfTries > numberOfLocalTries){
+
+                            // checks whether the table wins
+                            if (iWon(bingoTable)) {
+                                if (numberOfTries > numberOfLocalTries) {
                                     numberOfTries = numberOfLocalTries;
-                                    numberOfLocalTries = 0;
-                                    result = multipliedSumOfAllUncheckedNumbers(bingoTable, rowOfGuesses.get(calledNumberIndex));
+                                    result = multipliedSumOfAllUncheckedNumbers(bingoTable, rowOfGuess);
                                     System.out.println(Arrays.deepToString(bingoTable));
                                 }
                             }
@@ -75,7 +77,7 @@ public class Part1 {
                         indexIncreaser = tablesLineIndex = 0;
                         continue;
                     }
-                    indexIncreaser = 0;
+                    indexIncreaser = numberOfLocalTries = 0;
                     tablesLineIndex++;
                 }
             }

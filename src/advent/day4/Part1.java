@@ -53,8 +53,6 @@ public class Part1 {
 
                     if(tablesLineIndex == 4){
                         for (Integer rowOfGuess : rowOfGuesses) {
-
-                            // guessing part
                             for (int i = 0; i < 5; i++) {
                                 for (int j = 0; j < 5; j++) {
                                     if (rowOfGuess == bingoTable[i][j]) {
@@ -62,8 +60,6 @@ public class Part1 {
                                     }
                                 }
                             }
-
-                            // checks whether the table wins
                             if (iWon(bingoTable)) {
                                 if (numberOfTries > numberOfLocalTries) {
                                     numberOfTries = numberOfLocalTries;
@@ -73,7 +69,6 @@ public class Part1 {
                             }
                             numberOfLocalTries++;
                         }
-
                         indexIncrease = tablesLineIndex = 0;
                         continue;
                     }

@@ -13,6 +13,7 @@ public class Main {
         // System.out.printf("%d", advent.day3.Part1.getDiagnosis());
         // System.out.printf("%d", advent.day3.Part2.getDiagnosis());
 
-        System.out.printf("%d", advent.day4.Part1.playBingo());
+        // System.out.printf("%d", advent.day4.Part1.playBingo());
+        System.out.printf("%d", advent.day4.Part2.playBingo());
     }
 }

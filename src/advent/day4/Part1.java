@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Part1 {
     /*
-      Advent of code day 4 - part 4
+      Advent of code day 4 - part 1
       https://adventofcode.com/2021/day/4
    */
     public static int playBingo() throws FileNotFoundException {

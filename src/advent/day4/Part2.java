@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Part2 {
     /*
-      Advent of code day 4 - part 4
+      Advent of code day 4 - part 2
       https://adventofcode.com/2021/day/4
    */
     public static int playBingo() throws FileNotFoundException {
